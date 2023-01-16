@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: -1;
+    transform-style: preserve-3d;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 150px;
+    position:relative;
+    bottom:25vh;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.background {
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground {
+    transform: translateZ(-20px) scale(3);
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.content {
+    background: black;
+    color: white;
+    padding: 5rem 0;
+}
+
+p {
+    padding: 0 5rem;
+    margin: 5rem 0;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.adventure {
+    font-size: 5rem;
+    padding: 0 5rem;
+    text-transform: uppercase;
+}
+
+.biking {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    background: white;
+    height: 108px;
+    width: 308px;
+    position: relative;
+    top: 164px;
+    left: 41%;
+}
+
+.para-gliding {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    background: white;
+    width: 308px;
+    position: relative;
+    top: 164px;
+    left: 41%;
+}
+
+.surfing {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    background: white;
+    height: 108px;
+    width: 323px;
+    position: relative;
+    top: 164px;
+    left: 41%;
+}
+
+.bg {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg1 {
+    background-image: url('sport-1.jpg');
+}
+
+.bg2 {
+    background-image: url('sport-2.jpg');
+}
+
+.bg3 {
+    background-image: url('sport-3.jpg');
+}
